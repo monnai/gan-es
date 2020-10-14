@@ -1,7 +1,7 @@
 package com.gu.ganes.service.user;
 
 import com.gu.ganes.base.LoginUserUtil;
-import com.gu.ganes.dto.UserDTO;
+import com.gu.ganes.dto.dto.UserDTO;
 import com.gu.ganes.entity.Role;
 import com.gu.ganes.entity.User;
 import com.gu.ganes.repository.RoleRepository;

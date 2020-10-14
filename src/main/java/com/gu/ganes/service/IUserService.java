@@ -1,6 +1,6 @@
 package com.gu.ganes.service;
 
-import com.gu.ganes.dto.UserDTO;
+import com.gu.ganes.dto.dto.UserDTO;
 import com.gu.ganes.entity.User;
 
 /**
