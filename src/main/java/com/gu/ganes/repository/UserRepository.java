@@ -17,6 +17,8 @@ public interface UserRepository extends CrudRepository<User, Long> {
 
   User findUserByPhoneNumber(String telephone);
 
+
+
   @Modifying
   @Query("update User as user set user.name = :name where id = :id")
   void updateUsername(@Param(value = "id") Long id, @Param(value = "name") String name);

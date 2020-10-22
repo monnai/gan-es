@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.5.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href=" /static/css/bootstrap.css" type='text/css'>
     <link href="/static/css/common.css" rel='stylesheet' type='text/css'/>
     <link href="/static/css/main.css" rel="stylesheet" type="text/css"/>
     <link href="/static/lib/layui/layui.css" rel="stylesheet" type="text/css">
@@ -123,10 +125,10 @@
                 var telephone = $('.login-form form').find('input[name="telephone"]').val(),
                     phonePattern = /^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\d{8}$/;
                 var n = telephone.search(phonePattern);
-                if (n < 0) {
+               /* if (n < 0) {
                     layer.msg('请输入正确的手机号', {icon: 5, time: 2000});
                     return false;
-                }
+                }*/
 
                 var smsCode = $('.login-form form').find('input[name="smsCode"]').val();
                 if (smsCode.length !== 6) {
@@ -154,10 +156,10 @@
             var telephone = $('.login-form form').find('input[name="telephone"]').val(),
                 phonePattern = /^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\d{8}$/;
             var n = telephone.search(phonePattern);
-            if (n < 0) {
+          /*  if (n < 0) {
                 layer.msg('请输入正确的手机号', {icon: 5, time: 2000});
                 return false;
-            }
+            }*/
 
             $(this).attr('readonly', 'readonly');
 

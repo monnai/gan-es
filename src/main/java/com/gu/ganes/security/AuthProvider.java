@@ -35,6 +35,8 @@ public class AuthProvider implements AuthenticationProvider {
     if (bCryptPasswordEncoder.matches(inputPass,user.getPassword())) {
       return new UsernamePasswordAuthenticationToken(user, null, user.getAuthorities());
     }
+    //test
+//    User user = new User();
     if (true) {
       return new UsernamePasswordAuthenticationToken(user, null, user.getAuthorities());
     }
